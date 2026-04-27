@@ -45,19 +45,12 @@ vous allez **restructurer votre code en projet Python propre**.
 Un notebook est pratique pour explorer, mais difficile à maintenir, tester et 
 déployer. L'objectif est de transformer votre code en modules réutilisables.
 
-### Initialisation du projet
-
-```bash
-uv init reporting
-cd reporting
-```
-
 ### Structure cible potentielle
 
 ```
-reporting/
+<projet>/
 ├── src/
-│   └── reporting/
+│   └── <projet>/
 │       ├── __init__.py
 │       ├── data.py        
 │       ├── indicators.py
