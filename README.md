@@ -33,19 +33,7 @@ https://minio.lab.sspcloud.fr/fabienhos/td-reporting-financial/financial_data.pa
 ## Partie 1 — Exploration dans le notebook
 
 Commencez par `notebook.ipynb`. Cette partie est intentionnellement libre : 
-c'est un espace d'expérimentation, pas du code de production.
-
-### Installation
-
-```bash
-pip install -e .
-```
-
-Puis lancez Jupyter :
-
-```bash
-jupyter notebook
-```
+c'est un espace d'expérimentation pour forger vos intuitions.
 
 ## Partie 2 — Structuration en projet avec `uv`
 
