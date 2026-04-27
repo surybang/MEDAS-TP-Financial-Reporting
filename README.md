@@ -95,7 +95,7 @@ Et produire le fichier Excel final sans intervention manuelle.
 
 - Chaque cellule qui *fait quelque chose* devient une **fonction**
 - Chaque fonction va dans le module qui correspond à sa responsabilité
-- Le notebook peut rester comme documentation / démonstration, mais **aucune logique métier ne doit y rester**
+- Le notebook peut rester comme documentation / démonstration
 
 ## Objectifs pédagogiques
 
