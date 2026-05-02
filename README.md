@@ -2,11 +2,11 @@
 
 ## Contexte
 
-Vous travaillez pour une institution financière qui gère un portefeuille de clients particuliers (PP) et professionnels (PM). Chaque client est associé à un score de risque (`score`) et un score précédent (`score_prev`), permettant de suivre l'évolution de son profil.
+Vous travaillez pour une institution financière qui gère un portefeuille de clients particuliers (PP) et professionnels (PM). Chaque client est associé à un score de risque (`score`) et un score précédent (`score_prev`) permettant de suivre l'évolution de son profil.
 
 Le champ `drc_complet` indique si le dossier réglementaire du client est complet. L'`id_agent` identifie l'action d'un conseiller sur le profil du client.
 
-L'objectif de ce TD est de produire automatiquement un rapport Excel de suivi à partir de ces données brutes.
+L'objectif de ce TD est de produire *automatiquement* un rapport Excel de suivi à partir de ces données brutes.
 
 ## Démarrage
 
@@ -38,7 +38,7 @@ c'est un espace d'expérimentation pour forger vos intuitions.
 ## Partie 2 — Structuration du code
 
 Une fois l'exploration terminée et votre logique validée dans le notebook, 
-vous allez **restructurer votre code en projet Python de manière à ce qu'il soit modulable**.
+vous allez **restructurer votre code en projet Python modulable**.
 
 ### Pourquoi cette étape ?
 
@@ -70,7 +70,7 @@ déployer. L'objectif est de transformer votre code en modules réutilisables.
 uv run main.py
 ```
 
-Et produire le fichier Excel final sans intervention manuelle.
+Cette commande doit générer le reporting au format Excel.
 
 ### Conseils de migration notebook → scripts
 
