@@ -35,10 +35,10 @@ https://minio.lab.sspcloud.fr/fabienhos/td-reporting-financial/financial_data.pa
 Commencez par `notebook.ipynb`. Cette partie est intentionnellement libre : 
 c'est un espace d'expérimentation pour forger vos intuitions.
 
-## Partie 2 — Structuration en projet `Python flat`
+## Partie 2 — Structuration du code
 
 Une fois l'exploration terminée et votre logique validée dans le notebook, 
-vous allez **restructurer votre code en projet Python propre**.
+vous allez **restructurer votre code en projet Python de manière à ce qu'il soit modulable**.
 
 ### Pourquoi cette étape ?
 
