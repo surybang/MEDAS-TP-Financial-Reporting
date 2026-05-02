@@ -35,10 +35,10 @@ https://minio.lab.sspcloud.fr/fabienhos/td-reporting-financial/financial_data.pa
 Commencez par `notebook.ipynb`. Cette partie est intentionnellement libre : 
 c'est un espace d'expérimentation pour forger vos intuitions.
 
-## Partie 2 — Structuration en projet `Python flat`
+## Partie 2 — Structuration du code
 
 Une fois l'exploration terminée et votre logique validée dans le notebook, 
-vous allez **restructurer votre code en projet Python propre**.
+vous allez **restructurer votre code en projet Python modulaire**.
 
 ### Pourquoi cette étape ?
 
@@ -49,17 +49,20 @@ déployer. L'objectif est de transformer votre code en modules réutilisables.
 
 ```
 <projet>/
-├── src/
-│   └── <projet>/
-│       ├── __init__.py
-│       ├── data.py        
-│       ├── indicators.py
-│       └── report.py
+├── notebooks/
+│   └── notebook.ipynb  # Vous pouvez garder le notebook en guise d'archive
+├── output/
+│   └── Reporting_Financier_2026-05-02.xlsx  # Fichier de sortie
 ├── template/
-│   └── template_reporting.xlsx
-├── main.py                  # Point d'entrée
+│   └── template_reporting.xlsx  # Template à utiliser pour générer le fichier de sortie
+├── .gitignore
+├── .python-version
+├── config.py  # Contient les variables et structure pour la configuration
+├── main.py  # Point d'entrée du projet
 ├── pyproject.toml
-└── README.md
+├── README.md
+├── utils.py  # Contient les fonctions à utiliser pour générer le reporting
+└── uv.lock
 ```
 
 ### Point d'entrée
@@ -70,7 +73,7 @@ déployer. L'objectif est de transformer votre code en modules réutilisables.
 uv run main.py
 ```
 
-Et produire le fichier Excel final sans intervention manuelle.
+Afin de produire le fichier Excel final sans intervention manuelle.
 
 ### Conseils de migration notebook → scripts
 
