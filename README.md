@@ -49,17 +49,20 @@ déployer. L'objectif est de transformer votre code en modules réutilisables.
 
 ```
 <projet>/
-├── src/
-│   └── <projet>/
-│       ├── __init__.py
-│       ├── data.py        
-│       ├── indicators.py
-│       └── report.py
+├── notebooks/
+│   └── notebook.ipynb          # Vous pouvez garder le notebook en guise d'archive
+├── output/
+│   └── Reporting_Financier_2026-05-02.xlsx  # Fichier de sortie
 ├── template/
-│   └── template_reporting.xlsx
-├── main.py                  # Point d'entrée
+│   └── template_reporting.xlsx # Template pour générer le fichier de sortie
+├── .gitignore
+├── .python-version
+├── config.py                   # Variables et constantes de configuration
+├── main.py                     # Point d'entrée du projet
 ├── pyproject.toml
-└── README.md
+├── README.md
+├── utils.py                    # Fonctions pour générer le reporting
+└── uv.lock
 ```
 
 ### Point d'entrée
