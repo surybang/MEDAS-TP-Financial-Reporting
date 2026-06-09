@@ -52,7 +52,7 @@ déployer. L'objectif est de transformer votre code en modules réutilisables.
 ├── notebooks/
 │   └── notebook.ipynb  # Vous pouvez garder le notebook en guise d'archive
 ├── output/
-│   └── Reporting_Financier_2026-05-02.xlsx  # Fichier de sortie
+│   └── Reporting_Financier_2026-05-02.xlsx  # Fichier de sortie non commité
 ├── template/
 │   └── template_reporting.xlsx  # Template pour générer le fichier de sortie
 ├── src/
