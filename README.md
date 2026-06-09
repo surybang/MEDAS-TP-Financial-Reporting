@@ -42,7 +42,7 @@ vous allez **restructurer votre code en projet Python modulable**.
 
 ### Pourquoi cette étape ?
 
-Un notebook est pratique pour explorer, mais difficile à maintenir, tester et 
+Un notebook est pratique pour explorer mais difficile à maintenir, tester et 
 déployer. L'objectif est de transformer votre code en modules réutilisables.
 
 ### Structure cible potentielle
@@ -50,18 +50,22 @@ déployer. L'objectif est de transformer votre code en modules réutilisables.
 ```
 <projet>/
 ├── notebooks/
-│   └── notebook.ipynb          # Vous pouvez garder le notebook en guise d'archive
+│   └── notebook.ipynb  # Vous pouvez garder le notebook en guise d'archive
 ├── output/
 │   └── Reporting_Financier_2026-05-02.xlsx  # Fichier de sortie
 ├── template/
-│   └── template_reporting.xlsx # Template pour générer le fichier de sortie
+│   └── template_reporting.xlsx  # Template pour générer le fichier de sortie
+├── src/
+│    └── <projet>/
+│       ├── __init__.py
+│       ├── config.py  # Variables et constantes de configuration
+│       ├── utils.py  # Fonctions pour générer le reporting
+│       └── main.py  # Point d'entrée du projet
+│
 ├── .gitignore
 ├── .python-version
-├── config.py                   # Variables et constantes de configuration
-├── main.py                     # Point d'entrée du projet
 ├── pyproject.toml
-├── README.md
-├── utils.py                    # Fonctions pour générer le reporting
+├── README.md                   
 └── uv.lock
 ```
 
