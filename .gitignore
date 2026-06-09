@@ -2,3 +2,4 @@
 *.egg-info
 __pycache__/
 .ruff_cache/
+output/Reporting_Financier_2026-06-09.xlsx

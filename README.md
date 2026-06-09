@@ -74,7 +74,7 @@ déployer. L'objectif est de transformer votre code en modules réutilisables.
 `main.py` doit pouvoir s'exécuter en une commande :
 
 ```bash
-uv run main.py
+uv run src/medas_tp_financial_reporting/main.py
 ```
 
 Cette commande doit générer le reporting au format Excel.
