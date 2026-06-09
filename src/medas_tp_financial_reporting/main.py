@@ -4,8 +4,8 @@
 from openpyxl import load_workbook
 import pandas as pd
 
-from utils import get_data, clean_data, fill_indicators
-from config import URL, PATH_TEMPLATE, INDICATORS, SHEET_INDICATORS, PATH_OUTPUT
+from medas_tp_financial_reporting.utils import get_data, clean_data, fill_indicators
+from medas_tp_financial_reporting.config import URL, PATH_TEMPLATE, INDICATORS, SHEET_INDICATORS, PATH_OUTPUT
 
 
 def main():
